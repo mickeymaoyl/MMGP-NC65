@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="gbk"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+<!-- 
+	<bean class="nc.ui.pubapp.plugin.action.InsertActionInfo">
+		<property name="action">
+			<bean class="扩展Action类名">
+				<property name="flowBillType" value="false" />
+				<property name="sourceBillType" value="来源单据类型" />
+				<property name="model" ref="icBizModel" />
+				<property name="transferViewProcessor" ref="transferProcessorfor38" />
+				<property name="sourceBillName" value="来源单据名称" />
+			</bean>
+		</property>
+		<property name="target" ref="addFrom4A60Action" />
+		<property name="pos" value="after" />
+		<property name="actionContainer" ref="actionsOfList" />
+		<property name="actionType" value="notedit" />
+	</bean>
+
+	<bean name="transferLogicfor38" class="nc.ui.pubapp.billref.dest.DefaultBillDataLogic">
+		<property name="billForm" ref="card" />
+	</bean>
+
+	<bean name="transferProcessorfor38" class="nc.ui.pubapp.billref.dest.TransferViewProcessor">
+		<property name="list" ref="list" />
+		<property name="actionContainer" ref="container" />
+		<property name="cardActionContainer" ref="actionsOfCard" />
+		<property name="transferLogic" ref="transferLogicfor38" />
+		<property name="billForm" ref="card" />
+		<property name="cancelAction" ref="cancelAction" />
+		<property name="saveAction" ref="saveAction" />
+	</bean>
+
+	<bean id="EXEventHandlerMediator" class="nc.ui.pubapp.uif2app.model.AppEventHandlerMediator">
+		<property name="model" ref="icBizModel" />
+		<property name="handlerMap">
+			<map>
+				<entry key="nc.ui.pubapp.uif2app.event.card.CardBodyAfterEditEvent">
+					<list>
+						<bean class="表体编辑后事件类名">
+							<property name="model" ref="icBizModel" />
+						</bean>
+					</list>
+				</entry>
+				<entry key="nc.ui.pubapp.uif2app.event.card.CardHeadTailAfterEditEvent">
+					<list>
+						<bean class="表头编辑后类名" />
+					</list>
+				</entry>
+			</map>
+		</property>
+	</bean>
+	-->
+</beans>
